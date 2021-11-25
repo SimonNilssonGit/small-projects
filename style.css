@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+/*---------------- NAVBAR ------------------- */
+.navbar  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /*Make navbar stay fixed at top*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  background-color: #111;
+}
+/* Highlight a selected link */
+.navbar .active {
+  background-color: #04AA6D;
+}
+/*------------- END OF NAVBAR ----------------------- */
+
+
+/*------------------------  PROJEKT 1 -------------------- */
+.bg {
+  background: url(https://images.unsplash.com/photo-1542372147193-a7aca54189cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)
+  no-repeat center center/cover;
+  position: absolute;
+  top: -30;
+  left: -30;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+} 
+
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+}
+
